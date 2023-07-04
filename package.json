@@ -2,10 +2,11 @@
   "name": "parcel-project-template",
   "version": "1.1.0",
   "description": "",
-  "homepage": "https://github.com/migace/parcel-project-template-pl-main",
+  "main": "index.js",
+  "homepage": "https://mpawelec01.github.io/project_grupa_06",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url parcel-project-template-pl-main"
+    "build": "parcel build src/*.html --/project_grupa_06/"
   },
   "repository": {
     "type": "git",
