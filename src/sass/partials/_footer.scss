@@ -1,0 +1,35 @@
+.footer {
+  background: green;
+  &__heading {
+    color: #fcfcfc;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  &__slogan {
+    color: #fcfcfc;
+    font-size: 34px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.36px;
+    text-transform: uppercase;
+  }
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  &__icon {
+    border-radius: 50%;
+    background-color: #f8d24e;
+    fill: #84a178;
+    &:hover {
+      fill: #ffffff;
+    }
+  }
+}

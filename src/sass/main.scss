@@ -4,5 +4,11 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+<<<<<<< Updated upstream
 @import '../sass/example';
 @import '../sass/header';
+=======
+@import './example';
+@import './header';
+@import './partials/footer';
+>>>>>>> Stashed changes
