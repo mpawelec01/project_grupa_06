@@ -4,5 +4,7 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
-@import './example';
-@import './header';
+
+@import '../sass/header';
+@import '../sass/setup';
+@import './partials/button';
