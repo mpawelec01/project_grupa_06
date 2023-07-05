@@ -1,5 +1,35 @@
+$background-color1: #84a178;
+$color-white: #fcfcfc;
+$color-yellow: #f8d24e;
+$adress: #d6936d;
+$text-color: #131313;
+$background-modal: rgba(248, 210, 78, 0.1);
+$border-modal: #84a178;
+$time-color: #ababab;
+
 body {
-  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 480px;
+  width: 100%;
+  padding: 0 15px;
 }
 
 $background-color1: #84a178;

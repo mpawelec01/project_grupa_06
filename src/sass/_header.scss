@@ -1,9 +1,85 @@
 .header {
-  color: black;
+  padding-top: 17px;
+  font-family: 'Seymour One', sans-serif;
+  color: #fcfcfc;
   background-color: #84a178;
-  max-height: 100vw;
-  // &__logo {
-  //   fill: #f8d24e;
-  //   background-color: #f8d24e;
-  // }
+  height: 502px;
+  &__logo {
+    fill: #f8d24e;
+    max-width: 40px;
+    max-height: 37px;
+  }
+  &__mobile-menu {
+    max-width: 32px;
+    max-height: 32px;
+    fill: white;
+  }
+  &__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  &__blocks {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+  .hero {
+    // margin: 0;
+    // padding-bottom: 32px;
+    // display: flex;
+    &__buttons {
+      padding-top: 32px;
+      // &__2nd {
+      //   margin-left: 12px;
+      // }
+    }
+
+    &__svg--firstpart {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-width: 107px;
+      max-height: 34px;
+    }
+    &__svg--secondpart {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-width: 126px;
+      max-height: 49px;
+    }
+    &__ice-cream {
+      position: absolute;
+      bottom: 0;
+      left: 25%;
+      background-color: transparen;
+      // background: url(../images/mobile.jpg),
+      //   lightgray -19.518px -5.038px / 117.606% 113.259% no-repeat;
+
+      width: 177px;
+      height: 217px;
+    }
+  }
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+
+  .menu-container {
+    background-color: #84a178;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateX(100%);
+    transition: transform 250ms ease;
+    &__close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background-color: transparent;
+      border: none;
+    }
+  }
 }
