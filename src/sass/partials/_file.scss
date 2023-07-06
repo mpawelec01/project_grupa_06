@@ -20,10 +20,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  //   zmienić bg color na vars
-  background-color: white;
+  background-color: $color-white;
   border-radius: 10px;
-  border: 2px solid #f8d24e;
+  border: 2px solid $color-yellow;
 
   &__form {
     padding: 28px;
@@ -40,7 +39,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #131313;
+    color: $text-color;
     text-align: center;
     font-size: 16px;
     font-family: Montserrat;
@@ -53,7 +52,7 @@
   &__text {
     display: flex;
     flex-direction: column;
-    color: #131313;
+    color: $text-color;
     text-align: left;
     font-size: 14px;
     font-style: normal;
@@ -71,14 +70,14 @@
     width: 100%;
     padding-top: 8px;
     padding-bottom: 7px;
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84a178;
+    background: $background-modal;
+    border: 1px solid $border-modal;
     border-radius: 10px;
     margin-bottom: 12px;
 
     &::placeholder {
       color: #131313;
-      font-family: Montserrat;
+      font-family: 'Montserrat';
       font-weight: 400;
       font-size: 14px;
       line-height: 140%;
@@ -90,15 +89,15 @@
     display: block;
     width: 100%;
     height: 64px;
-    background: rgba(248, 210, 78, 0.1);
+    background: $background-modal;
     resize: none;
     padding-top: 8px;
-    border: 1px solid #84a178;
+    border: 1px solid $border-modal;
     border-radius: 10px;
 
     &::placeholder {
-      color: #131313;
-      font-family: Montserrat;
+      color: $text-color;
+      font-family: 'Montserrat';
       font-weight: 400;
       font-size: 14px;
       line-height: 140%;
