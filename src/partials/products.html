@@ -4,7 +4,13 @@
         <h2 class="products__heading">products</h2>
         <ul class="products__list">
             <li>
-                <img class="products__img products__img-fill" src="#" alt="ice-cream">
+                <picture>
+                    <source srcset="
+                    ./images/pictures/mobile_product1_x1.jpg 1x,
+                    ./images/pictures/mobile_product1_x1.jpg 2x 
+                    " media="(max-width: 767px)" />
+                    <img class="products__img" src="./images/pictures/mobile_product1_x1.jpg" alt="ice-cream">
+                </picture>
             </li>
             <div class="products__list-ice_cream">
                 <h3 class="products__title">ice cream</h3>
@@ -17,7 +23,13 @@
                 </button>
             </div>
             <li>
-                <img class="products__img products__img-fill" src="#" alt="ice-cream">
+                <picture>
+                    <source srcset="
+                    ./images/pictures/mobile_product2_x1.jpg 1x,
+                    ./images/pictures/mobile_product_x2.jpg 2x 
+                    " media="(max-width: 767px)" />
+                    <img class="products__img" src="./images/pictures/mobile_product_x2.jpg" alt="ice-cream">
+                </picture>
             </li>
             <div class="products__list-ice_coffe">
                 <h3 class="products__title">ice coffee</h3>
@@ -30,7 +42,13 @@
                 </button>
             </div>
             <li>
-                <img class="products__img products__img-fill" src="#" alt="ice-cream">
+                <picture>
+                    <source srcset="
+                    ./images/pictures/mobile_product3_x1.jpg 1x,
+                    ./images/pictures/mobile_product3_x2.jpg 2x 
+                    " media="(max-width: 767px)" />
+                    <img class="products__img" src="./images/pictures/mobile_product3_x1.jpg" alt="ice-cream">
+                </picture>
             </li>
             <div class="products__list-milkshake">
                 <h3 class="products__title">milkshakes</h3>
@@ -54,7 +72,7 @@
                 Chololate
                 icecream
             </h2>
-            <picture><img class="modal__img" src="#" alt="ice cream Chololate">
+            <picture><img class="modal__img" src="./images/pictures/mobile_ingrediens_x1.jpg" alt="ice cream Chololate">
             </picture>
             <div class="calorie">
                 <ul class="calorie__list">
