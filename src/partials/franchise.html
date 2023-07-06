@@ -1,0 +1,56 @@
+<section class="container">
+  <div class="backdrop is-hidden" franchise>
+    <!--   dodać   is-hidden -->
+    <div class="modal-franchise">
+      <button type="button" class="modal-franchise__button-close" franchise-close>
+        <svg width="20" height="20">
+          <!-- wrzucić svg -->
+          <use href="#"></use>
+        </svg>
+      </button>
+      <form class="modal-franchise__form">
+        <p class="modal-franchise__header">
+          Thank you for your interest in owning an Ice Cream shop
+        </p>
+        <p class="modal-franchise__text">
+          Due to the overwhelming volume of franchise requests we are not accepting new franchisee
+          applications at this time. Once the application process resumes, we will contact you for
+          further information. Please fill out the contact information below and we will reach out
+          for additional information. We appreciate your patience.
+        </p>
+        <label class="modal-franchise__label" for="franchiseusername"
+          ><input
+            class="modal-franchise__input"
+            type="text"
+            name="franchiseusername"
+            placeholder="Name"
+          />
+        </label>
+        <label class="modal-franchise__label" for="franchisephone"
+          ><input
+            class="modal-franchise__input"
+            type="number"
+            name="franchisephone"
+            placeholder="Phone"
+          />
+        </label>
+        <label class="modal-franchise__label" for="franchiseemail"
+          ><input
+            class="modal-franchise__input"
+            type="email"
+            name="franchiseemail"
+            placeholder="Email"
+          />
+        </label>
+        <label class="modal-franchise__label" for="franchisetextarea">
+          <textarea
+            class="modal-franchise__textarea"
+            placeholder="Comment"
+            name="franchisetextarea"
+          ></textarea>
+        </label>
+        <button type="submit" class="modal-franchise__button">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
