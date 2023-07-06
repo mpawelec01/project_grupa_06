@@ -14,8 +14,8 @@
 
 .modal-franchise {
   position: absolute;
-  width: calc(100% - 30px);
-  max-width: 450px;
+  width: 100%;
+  max-width: 280px;
   height: auto;
   top: 50%;
   left: 50%;
@@ -43,6 +43,7 @@
     color: #131313;
     text-align: center;
     font-size: 16px;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -70,22 +71,39 @@
     width: 100%;
     padding-top: 8px;
     padding-bottom: 7px;
-    padding-inline: 12px;
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid #84a178;
     border-radius: 10px;
     margin-bottom: 12px;
+
+    &::placeholder {
+      color: #131313;
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      padding-inline: 12px;
+    }
   }
 
   &__textarea {
     display: block;
     width: 100%;
     height: 64px;
-    padding: 8px 12px;
     background: rgba(248, 210, 78, 0.1);
     resize: none;
+    padding-top: 8px;
     border: 1px solid #84a178;
     border-radius: 10px;
+
+    &::placeholder {
+      color: #131313;
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      padding-inline: 12px;
+    }
   }
 
   &__button {
