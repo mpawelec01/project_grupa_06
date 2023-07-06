@@ -1,4 +1,6 @@
 .products {
+  background: url(../images/pictures/mobile_background_x1.jpg);
+
   &__span {
     color: $text-color;
     text-align: center;
@@ -66,20 +68,16 @@
       margin-inline: 80px 80px;
     }
   }
+
   &__img {
+    display: flex;
     position: relative;
     bottom: -95px;
-    margin-left: 140px;
-    display: flex;
-    width: 200px;
+    margin-left: 95px;
     height: 200px;
-    border-radius: 100%;
-    background-color: $text-color;
-    &-fill {
-      fill: linear-gradient(0deg, rgba(156, 190, 143, 0.7) 0%, rgba(156, 190, 143, 0.7) 100%),
-        #d9d9d9;
-      filter: drop-shadow(0px 5.342193126678467px 20.033222198486328px rgba(10, 136, 23, 0.25));
-    }
+    border-radius: 100px;
+    fill: linear-gradient(0deg, rgba(156, 190, 143, 0.7) 0%, rgba(156, 190, 143, 0.7) 100%), #d9d9d9;
+    filter: drop-shadow(0px 5.342193126678467px 20.033222198486328px rgba(10, 136, 23, 0.25));
   }
 
   &__btn {
