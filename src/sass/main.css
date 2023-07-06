@@ -3,34 +3,125 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
-}
-
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
-}
-
-.example .background {
-  height: 240px;
-  background-image: url("../images/demo.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
 .header {
-  color: black;
+  padding-top: 17px;
+  font-family: "Seymour One", sans-serif;
+  color: #fcfcfc;
   background-color: #84a178;
-  max-height: 100vw;
+  height: 502px;
+}
+.header__logo {
+  fill: #f8d24e;
+  max-width: 40px;
+  max-height: 37px;
+}
+.header__mobile-menu {
+  max-width: 32px;
+  max-height: 32px;
+  fill: white;
+}
+.header__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.header__blocks {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.header .hero__buttons {
+  padding-top: 32px;
+}
+.header .hero__svg--firstpart {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 107px;
+  max-height: 34px;
+}
+.header .hero__svg--secondpart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 126px;
+  max-height: 49px;
+}
+.header .hero__ice-cream {
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  background-color: transparen;
+  width: 177px;
+  height: 217px;
+}
+.header .menu-container.is-open {
+  transform: translateX(0);
+}
+.header .menu-container {
+  background-color: #84a178;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(100%);
+  transition: transform 250ms ease;
+}
+.header .menu-container__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 480px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.buttons__products {
+  border-radius: 8px;
+  border: 2px solid #f8d24e;
+  padding: 11px 26px;
+  background-color: transparent;
+  color: #000;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: normal;
+}
+.buttons__made {
+  color: #f8d24e;
+  text-align: center;
+  font-size: 12px;
+  max-width: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
+  border: none;
+  background-color: transparent;
 }/*# sourceMappingURL=main.css.map */
