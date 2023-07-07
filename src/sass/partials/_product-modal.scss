@@ -1,5 +1,4 @@
 .products {
-  position: relative;
   top: -20px;
   background: url(../images/pictures/mobile_background_x1.jpg);
 
@@ -155,8 +154,7 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    color: $text-color;
-
+    background: $background-white-color;
     right: 8px;
     border: none;
     top: 8px;
