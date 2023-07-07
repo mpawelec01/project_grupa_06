@@ -4,7 +4,13 @@
         <h2 class="products__heading">products</h2>
         <ul class="products__list">
             <li>
-                <img class="products__img products__img-fill" src="#" alt="ice-cream">
+                <picture>
+                    <source srcset="
+                    ./images/pictures/mobile_product1_x1.jpg 1x,
+                    ./images/pictures/mobile_product1_x1.jpg 2x 
+                    " media="(max-width: 767px)" />
+                    <img class="products__img" src="./images/pictures/mobile_product1_x1.jpg" alt="ice-cream">
+                </picture>
             </li>
             <div class="products__list-ice_cream">
                 <h3 class="products__title">ice cream</h3>
@@ -13,11 +19,19 @@
                     stabilizer
                 </p>
                 <button class="products__btn" type="button" ice-cream-open>
-                    >
+                    <svg>
+                        <use href="./images/icons/pictogram.svg#icon-arrow"></use>
+                    </svg>
                 </button>
             </div>
             <li>
-                <img class="products__img products__img-fill" src="#" alt="ice-cream">
+                <picture>
+                    <source srcset="
+                    ./images/pictures/mobile_product2_x1.jpg 1x,
+                    ./images/pictures/mobile_product2_x2.jpg 2x 
+                    " media="(max-width: 767px)" />
+                    <img class="products__img" src="./images/pictures/mobile_product2_x2.jpg" alt="ice-cream">
+                </picture>
             </li>
             <div class="products__list-ice_coffe">
                 <h3 class="products__title">ice coffee</h3>
@@ -25,20 +39,30 @@
                     use of preservatives and flavor enhancers
 
                 </p>
-                <button class="products__btn" type="button">
-                    >
+                <button class="products__btn--ice-coffe" type="button">
+                    <svg>
+                        <use href="./images/icons/pictogram.svg#icon-arrow"></use>
+                    </svg>
                 </button>
             </div>
             <li>
-                <img class="products__img products__img-fill" src="#" alt="ice-cream">
+                <picture>
+                    <source srcset="
+                    ./images/pictures/mobile_product3_x1.jpg 1x,
+                    ./images/pictures/mobile_product3_x2.jpg 2x 
+                    " media="(max-width: 767px)" />
+                    <img class="products__img" src="./images/pictures/mobile_product3_x1.jpg" alt="ice-cream">
+                </picture>
             </li>
             <div class="products__list-milkshake">
                 <h3 class="products__title">milkshakes</h3>
                 <p class="products__descr">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits,
                     berries and other sweets of your choice
                 </p>
-                <button class="products__btn" type="button">
-                    >
+                <button class="products__btn--milkshake" type="button">
+                    <svg>
+                        <use href="./images/icons/pictogram.svg#icon-arrow"></use>
+                    </svg>
                 </button>
             </div>
         </ul>
@@ -47,14 +71,14 @@
         <div class="modal">
             <button type="button" class="modal__button" ice-cream-close>
                 <svg width="20" height="20">
-                    <use href="#"></use>
+                    <use href="./images/icons/pictogram.svg#icon-close"></use>
                 </svg>
             </button>
             <h2 class="modal__headline">
                 Chololate
                 icecream
             </h2>
-            <picture><img class="modal__img" src="#" alt="ice cream Chololate">
+            <picture><img class="modal__img" src="./images/pictures/mobile_ingrediens_x1.jpg" alt="ice cream Chololate">
             </picture>
             <div class="calorie">
                 <ul class="calorie__list">

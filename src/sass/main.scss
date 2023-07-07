@@ -5,9 +5,12 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 
-@import '../sass/header';
-@import '../sass/setup';
+@import './partials/hero-header';
+@import './partials/setup';
 @import './partials/button';
+@import './partials/file';
 @import './partials/product-modal';
 @import './partials/footer';
 @import './partials/about';
+@import './partials/contacts';
+

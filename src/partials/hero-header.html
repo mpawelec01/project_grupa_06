@@ -4,23 +4,18 @@
       <svg class="header__logo" width="40" height="37">
         <use href="./images/icons.svg#icon-untitled"></use>
       </svg>
-      <button
-        type="button"
-        class="header__button js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
+      <button type="button" class="header__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg class="header__mobile-menu" width="32" height="32">
           <use href="./images/icons.svg#icon-eva_menu-fill"></use>
         </svg>
       </button>
     </div>
     <div class="hero">
-      <h2 class="hero__heading">ICE CREAM MADE WITH</h2>
-      <h1 class="hero__title">PASSION</h1>
+      <h1 class="hero__heading">ICE CREAM MADE WITH</h1>
+      <p class="hero__title">PASSION</p>
       <div class="hero__buttons buttons">
         <button type="button" class="buttons__products">Products</button>
-        <button type="button" class="buttons__made hero__buttons_2nd">How it’s made?</button>
+        <button type="button" class="buttons__made buttons__made--2nd">How it’s made?</button>
       </div>
       <!-- <div class="hero__dots">
         <svg class="hero__svg hero__svg--firstpart">
@@ -44,20 +39,22 @@
         <use href="./images/icons.svg#icon-ep_close"></use>
       </svg>
     </button>
-    <ul class="menu-container__mobile-menu mobile-menu">
-      <li class="mobile_menu__item">
-        <a href="#" class="mobile-menu__link">Home</a>
-      </li>
-      <li class="mobile_menu__item">
-        <a href="#" class="mobile-menu__link">How it's made?</a>
-      </li>
-      <li class="mobile_menu__item">
-        <a href="#" class="mobile-menu__link">Our products</a>
-      </li>
-      <li class="mobile_menu__item">
-        <a href="#" class="mobile-menu__link">Contact</a>
-      </li>
-    </ul>
-    <button type="button" class="buttons_buynow mobile-menu__button">Buy now</button>
+    <div class="mobile-menu">
+      <ul class="mobile-menu__list">
+        <li class="mobile_menu__item">
+          <a href="#" class="mobile-menu__link">Home</a>
+        </li>
+        <li class="mobile_menu__item">
+          <a href="#" class="mobile-menu__link">How it's made?</a>
+        </li>
+        <li class="mobile_menu__item">
+          <a href="#" class="mobile-menu__link">Our products</a>
+        </li>
+        <li class="mobile_menu__item">
+          <a href="#" class="mobile-menu__link">Contact</a>
+        </li>
+      </ul>
+      <button type="button" class="buttons__buynow mobile-menu__button">Buy now</button>
+    </div>
   </div>
 </header>
