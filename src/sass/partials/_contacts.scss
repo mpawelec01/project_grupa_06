@@ -22,8 +22,9 @@
     background-color: $color-yellow;
     border-radius: 4px;
     height: 22px;
-    padding: 0 11px;
-    box-sizing: border-box;
+    width: fit-content;
+    padding: 4px 22px;
+    text-transform: uppercase;
     margin-top: 40px;
     margin-left: 32px;
     margin-bottom: 20px;
@@ -39,12 +40,5 @@
   }
   &__schop--address {
     color: #d6936d;
-  }
-  &__schop--address--border {
-    width: 216px;
-    height: 0px;
-    flex-shrink: 0;
-    stroke-width: 1px;
-    stroke: #e1e1e1;
   }
 }
