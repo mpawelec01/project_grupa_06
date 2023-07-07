@@ -8,7 +8,6 @@
     text-align: center;
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
-
     font-weight: 600;
     line-height: normal;
   }
@@ -16,13 +15,38 @@
     color: #f8d24e;
     text-align: center;
     font-size: 12px;
-    max-width: 100px;
-    font-family: 'Montserrat', sans-serif;
 
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     line-height: normal;
     text-decoration-line: underline;
     border: none;
     background-color: transparent;
+  }
+  &_read-more {
+    width: 164px;
+    background-color: $color-yellow;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    border: none;
+    height: 42px;
+  }
+  &__buynow {
+    border-radius: 10px;
+    background: #f8d24e;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: normal;
+    padding: 12px 0;
+    padding-left: 36px;
+    padding-right: 51px;
+    border: none;
   }
 }
