@@ -47,6 +47,8 @@
 .copyright {
   border-top: 1px solid grey;
   padding-block: 10px;
+  text-align: center;
+  color: $time-color;
   &__text {
     color: #7a7a7a;
     text-align: center;
@@ -78,5 +80,7 @@
     background-color: $color-yellow;
     border-radius: 50%;
     fill: $border-modal;
+    padding-top: 5px;
+    padding-left: 5px;
   }
 }
