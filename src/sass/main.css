@@ -5,7 +5,7 @@
  */
 .header {
   padding-top: 17px;
-  font-family: "Seymour One", sans-serif;
+  font-family: 'Seymour One', sans-serif;
   color: #fcfcfc;
   background-color: #84a178;
   height: 502px;
@@ -31,8 +31,6 @@
   padding-bottom: 50px;
 }
 .header .hero__buttons {
-
-  padding-top: 32px;
   display: flex;
   padding-top: 32px;
   gap: 12px;
@@ -90,60 +88,6 @@
 }
 .header .menu-container__close-btn {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  background-color: transparent;
-  border: none;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  margin: 0 0;
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-.container {
-  max-width: 480px;
-  width: 100%;
-  padding: 0 15px;
-}
-
-.buttons__products {
-  border-radius: 8px;
-  border: 2px solid #f8d24e;
-  padding: 11px 26px;
-  background-color: transparent;
-  color: #000;
-  text-align: center;
-  font-size: 12px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  line-height: normal;
-}
-.buttons__made {
-  color: #f8d24e;
-  text-align: center;
-  font-size: 12px;
-  max-width: 100px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  line-height: normal;
-  text-decoration-line: underline;
-  border: none;
-  background-color: transparent;
   top: 15px;
   right: 15px;
   background-color: transparent;
@@ -177,7 +121,7 @@ ul {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0 0;
 }
 
@@ -204,7 +148,7 @@ ul {
   color: #000;
   text-align: center;
   font-size: 12px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   line-height: normal;
 }
@@ -212,7 +156,7 @@ ul {
   color: #f8d24e;
   text-align: center;
   font-size: 12px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   line-height: normal;
   text-decoration-line: underline;
@@ -231,7 +175,7 @@ ul {
   border: none;
   height: 42px;
 }
-.buttons_read-more__buynow {
+.buttons__buynow {
   border-radius: 10px;
   background: #f8d24e;
   color: #000;
@@ -321,7 +265,7 @@ ul {
 }
 .modal-franchise__input::-moz-placeholder {
   color: #131313;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
@@ -329,7 +273,7 @@ ul {
 }
 .modal-franchise__input::placeholder {
   color: #131313;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
@@ -347,7 +291,7 @@ ul {
 }
 .modal-franchise__textarea::-moz-placeholder {
   color: #131313;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
@@ -355,7 +299,7 @@ ul {
 }
 .modal-franchise__textarea::placeholder {
   color: #131313;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
@@ -508,7 +452,8 @@ ul {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 0 20px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   border: 2px solid #f8d24e;
 }
@@ -620,7 +565,8 @@ ul {
 }
 .modal__img {
   border-radius: 132px;
-  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7) 0%, rgba(156, 190, 143, 0.7) 100%), #d9d9d9;
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7) 0%, rgba(156, 190, 143, 0.7) 100%),
+    #d9d9d9;
   box-shadow: 0px 5.2602739334px 19.726026535px 0px rgba(10, 136, 23, 0.25);
   width: 132px;
   height: 132px;
@@ -745,7 +691,8 @@ ul {
   flex-direction: column;
   align-items: flex-end;
 }
-.social__item:hover .social-link__icon, .social__item:focus .social-link__icon {
+.social__item:hover .social-link__icon,
+.social__item:focus .social-link__icon {
   fill: #fcfcfc;
 }
 
@@ -832,8 +779,10 @@ ul {
   background-color: #f8d24e;
   border-radius: 4px;
   height: 22px;
-  padding: 0 11px;
-  box-sizing: border-box;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4px 22px;
+  text-transform: uppercase;
   margin-top: 40px;
   margin-left: 32px;
   margin-bottom: 20px;
@@ -848,13 +797,6 @@ ul {
 }
 .contacts__schop--address {
   color: #d6936d;
-}
-.contacts__schop--address--border {
-  width: 216px;
-  height: 0px;
-  flex-shrink: 0;
-  stroke-width: 1px;
-  stroke: #e1e1e1;
 }
 
 .advantages {
@@ -897,4 +839,88 @@ ul {
   letter-spacing: 0em;
   text-align: center;
   color: #fcfcfc;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.section-ice {
+  margin: 0 auto;
+  max-width: 480px;
+  background-image: url(/images/pictures/mobile_background_x1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (main-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-ice {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/pictures/mobile_background_x2.jpg);
+  }
+}
+.section-ice__gallery {
+  margin-top: -35px;
+  padding-bottom: 60px;
+}
+
+.section-reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+}
+.section-reviews__customer-container {
+  width: 85px;
+  height: 85px;
+  border: none;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.section-reviews__feedback-container {
+  background-color: #84a178;
+  width: 280px;
+  border-radius: 10px;
+  padding: 40px;
+}
+.section-reviews__feedback-text {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30.6px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fcfcfc;
+  width: 202px;
+}
+.section-reviews__name-location {
+  margin-bottom: 120px;
+}
+.section-reviews__header {
+  width: 189px;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 37.2px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #131313;
+}
+
+.navigation-review {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+.navigation-review__button {
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  margin-bottom: 50px;
+}
+.navigation-review__button-active {
+  background-color: #84a178;
+} /*# sourceMappingURL=main.css.map */
