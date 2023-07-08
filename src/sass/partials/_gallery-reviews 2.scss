@@ -1,0 +1,58 @@
+.section-ice {
+  margin: 0 auto;
+  max-width: 480px;
+  background-image: url(./images/pictures/mobile_background_x1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media (main-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2ppx) {
+    background-image: url(./images/pictures/mobile_background_x2.jpg);
+  }
+  &__gallery {
+    margin-top: -35px;
+    padding-bottom: 60px;
+  }
+}
+.section-reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  &__customer-container {
+    width: 85px;
+    height: 85px;
+    border: none;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  &__feedback-container {
+    background-color: $border-modal;
+    width: 280px;
+    border-radius: 10px;
+    padding: 40px;
+  }
+  &__feedback-text {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30.6px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $color-white;
+    width: 202px;
+  }
+  &__name-location {
+    margin-bottom: 120px;
+  }
+  &__header {
+    width: 189px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 37.2px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $text-color;
+  }
+}
