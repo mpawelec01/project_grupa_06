@@ -6,7 +6,8 @@
   background-position: center;
   background-repeat: no-repeat;
   @media (main-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2ppx) {
-    background-image: url(/images/pictures/mobile_background_x2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/pictures/mobile_background_x2.jpg);
   }
   &__gallery {
     margin-top: -35px;
@@ -54,5 +55,22 @@
     letter-spacing: 0em;
     text-align: center;
     color: $text-color;
+  }
+}
+.navigation-review {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  &__button {
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    margin-bottom: 50px;
+  }
+  &__button-active {
+    background-color: #84a178;
   }
 }
