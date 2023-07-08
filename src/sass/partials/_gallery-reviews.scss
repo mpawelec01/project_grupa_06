@@ -1,17 +1,24 @@
 .section-ice {
-  margin: 0 auto;
+  margin: 0;
   max-width: 480px;
+  position: relative;
   background-image: url(../images/pictures/mobile_background_x1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   @media (main-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/pictures/mobile_background_x2.jpg);
+    background-image: url(../images/pictures/mobile_background_x2.jpg);
+  }
+  &__header {
+    position: relative;
+    top: -45px;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: -16px;
   }
   &__gallery {
-    margin-top: -35px;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
   }
 }
 .section-reviews {
@@ -26,6 +33,7 @@
     border: none;
     border-radius: 50px;
     overflow: hidden;
+    margin: 10px;
   }
   &__feedback-container {
     background-color: $border-modal;
@@ -56,6 +64,9 @@
     text-align: center;
     color: $text-color;
   }
+  &__header-customer-two {
+    margin-top: 50px;
+  }
 }
 .navigation-review {
   display: flex;
@@ -73,4 +84,14 @@
   &__button-active {
     background-color: #84a178;
   }
+}
+.hidden-nav {
+  display: none;
+}
+.swiper-pagination {
+  padding-bottom: 100px;
+}
+img {
+  display: block;
+  max-width: 100%;
 }
