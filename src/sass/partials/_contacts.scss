@@ -11,8 +11,8 @@
     height: 412px;
     border-radius: 24px;
     background-color: $color-white;
-    margin-left: 7%;
-    margin-right: 93%;
+    margin-left: 50%;
+    margin-right: 50%;
     box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
     margin-bottom: 16px;
     position: relative;
@@ -65,28 +65,53 @@
   color: $time-color;
 }
 
-.our-locations {
-  background-color: $color-yellow;
-  width: 196px;
-  height: 42px;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 10px;
-  margin-bottom: 16px;
-  margin-left: 10%;
-  margin-right: 90%;
-  font-weight: 600;
-}
-.franschise {
+.buttons-location {
   display: flex;
-  justify-content: center;
-  background-color: transparent;
-  width: 196px;
-  height: 42px;
-  align-items: center;
-  border-radius: 10px;
-  border: 2px solid #f8d24e;
-  margin-left: 10%;
-  font-weight: 600;
+  flex-direction: column;
+  position: relative;
+  top: -362px;
+  margin-left: 50%;
+  margin-right: 50%;
+  &__our-locations {
+    background-color: $color-yellow;
+    width: 196px;
+    height: 42px;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 16px;
+
+    font-weight: 600;
+  }
+  &__franschise {
+    justify-content: center;
+    background-color: transparent;
+    width: 196px;
+    height: 42px;
+
+    border-radius: 10px;
+    border: 2px solid #f8d24e;
+
+    font-weight: 600;
+  }
+  &__our-locations:hover {
+    background-color: #0a8817;
+  }
+  &__franschise:hover {
+    border: 2px solid #0a8817;
+  }
+  &__our-locations:focus {
+    background-color: #0a8817;
+    color: white;
+  }
+  &__franschise:focus {
+    border: 2px solid #0a8817;
+    color: white;
+  }
+}
+.buttons-location__our-locations[disabled] {
+  background-color: #ababab;
+}
+.buttons-location__franchise[disabled] {
+  border: 2px solid #ababab;
 }
