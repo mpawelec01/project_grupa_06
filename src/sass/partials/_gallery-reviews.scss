@@ -41,11 +41,14 @@
     margin-top: -16px;
     margin-left: 20px;
     width: 440px;
+    height: 204px;
     @media screen and (min-width: 768px) {
       width: 704px;
+      height: 327px;
     }
     @media screen and (min-width: 1200px) {
       width: 1013px;
+      height: 422px;
       left: 70px;
     }
   }
@@ -168,7 +171,6 @@ img {
   }
 }
 #slideset1 {
-  height: 10em;
   position: relative;
 }
 #slideset1 > * {
