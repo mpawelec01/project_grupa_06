@@ -1,6 +1,9 @@
 .contacts {
   width: 100%;
-
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
   background-color: $background-color1;
   font-family: 'Montserrat', sans-serif;
 
@@ -11,10 +14,7 @@
     height: 412px;
     border-radius: 24px;
     background-color: $color-white;
-    margin-left: 50%;
-    margin-right: 50%;
     box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
-    margin-bottom: 16px;
     position: relative;
     top: -362px;
   }
