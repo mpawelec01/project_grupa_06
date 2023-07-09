@@ -41,10 +41,12 @@
     margin-top: -16px;
     margin-left: 20px;
     width: 440px;
+    @media screen and (min-width: 768px) {
+      width: 704px;
+      left: 100px;
+    }
   }
-  @media screen and (min-width: 768px) {
-    width: 704px;
-  }
+
   &__gallery {
     padding-bottom: 10px;
   }
@@ -67,6 +69,8 @@
     width: 280px;
     border-radius: 10px;
     padding: 40px;
+    @media screen and (min-width: 768px) {
+       width: 968px;
   }
   &__feedback-text {
     font-family: 'Montserrat';
