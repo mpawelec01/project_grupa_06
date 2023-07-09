@@ -1,71 +1,87 @@
 <section class="products">
     <div class="container">
-        <p class="products__span">100% natural</p>
+        <p class="products__text">100% natural</p>
         <h2 class="products__heading">products</h2>
-        <ul class="products__list">
-            <li>
+        <div class="products__list">
+            <figure class="products__space">
                 <picture>
+                    <source srcset="
+                    ./images/pictures/desktop_product1_x1.jpg 1x,
+                    ./images/pictures/desktop_product1_x2.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="
+                    ./images/pictures/tablet_product1_x1.jpg 1x,
+                    ./images/pictures/tablet_product1_x2.jpg 2x" media="(min-width: 768px)">
                     <source srcset="
                     ./images/pictures/mobile_product1_x1.jpg 1x,
-                    ./images/pictures/mobile_product1_x1.jpg 2x 
-                    " media="(max-width: 767px)" />
-                    <img class="products__img" src="./images/pictures/mobile_product1_x1.jpg" alt="ice-cream">
+                    ./images/pictures/mobile_product1_x2.jpg 2x" media="(min-width: 767px)">
+                    <img src="./images/pictures/mobile_product1_x1.jpg" alt="ice-cream" class="products__img"
+                        type="jpg">
                 </picture>
-            </li>
-            <div class="products__list-ice_cream">
-                <h3 class="products__title">ice cream</h3>
-                <p class="products__descr">Soft ice cream with a delicate taste. Made with milk, cream, sugar and
-                    natural
-                    stabilizer
-                </p>
-                <button class="products__btn" type="button" ice-cream-open>
-                    <svg>
-                        <use href="./images/icons/pictogram.svg#icon-arrow"></use>
-                    </svg>
-                </button>
-            </div>
-            <li>
+                <figcaption class="products__ice">
+                    <p class="products__title">ice cream</p>
+                    <p class="products__descr">Soft ice cream with a delicate taste. Made with milk, cream, sugar and
+                        natural
+                        stabilizer</p>
+                    <button class="products__btn" type="button" ice-cream-open>
+                        <svg width="40px" height="16px">
+                            <use href="./images/icons/pictogram.svg#icon-arrow"></use>
+                        </svg>
+                    </button>
+                </figcaption>
+            </figure>
+            <figure class="products__space">
                 <picture>
                     <source srcset="
-                    ./images/pictures/mobile_product2_x1.jpg 1x,
-                    ./images/pictures/mobile_product2_x2.jpg 2x 
-                    " media="(max-width: 767px)" />
-                    <img class="products__img" src="./images/pictures/mobile_product2_x2.jpg" alt="ice-cream">
+                                ./images/pictures/desktop_product2_x1.jpg 1x,
+                                ./images/pictures/desktop_product2_x2.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="
+                                ./images/pictures/tablet_product2_x1.jpg 1x,
+                                ./images/pictures/tablet_product2_x2.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="
+                                ./images/pictures/mobile_product2_x1.jpg 1x,
+                                ./images/pictures/mobile_product2_x2.jpg 2x" media="(min-width: 767px)">
+                    <img src="./images/pictures/mobile_product2_x1.jpg" alt="ice-cream" class="products__img"
+                        type="jpg">
                 </picture>
-            </li>
-            <div class="products__list-ice_coffe">
-                <h3 class="products__title">ice coffee</h3>
-                <p class="products__descr">Fragrant invigorating drink created from 100% natural ingredients without the
-                    use of preservatives and flavor enhancers
-
-                </p>
-                <button class="products__btn--ice-coffe" type="button">
-                    <svg>
-                        <use href="./images/icons/pictogram.svg#icon-arrow"></use>
-                    </svg>
-                </button>
-            </div>
-            <li>
+                <figcaption class="products__coffe">
+                    <p class="products__title">ice coffee</p>
+                    <p class="products__descr">Fragrant invigorating drink created from 100% natural ingredients without
+                        the use of preservatives and flavor enhancers
+                    </p>
+                    <button class="products__btn" type="button" ice-cream-open>
+                        <svg width="40px" height="16px">
+                            <use href="./images/icons/pictogram.svg#icon-arrow"></use>
+                        </svg>
+                    </button>
+                </figcaption>
+            </figure>
+            <figure class="products__space">
                 <picture>
                     <source srcset="
-                    ./images/pictures/mobile_product3_x1.jpg 1x,
-                    ./images/pictures/mobile_product3_x2.jpg 2x 
-                    " media="(max-width: 767px)" />
-                    <img class="products__img" src="./images/pictures/mobile_product3_x1.jpg" alt="ice-cream">
+                                ./images/pictures/desktop_product3_x1.jpg 1x,
+                                ./images/pictures/desktop_product3_x2.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="
+                                ./images/pictures/tablet_product3_x1.jpg 1x,
+                                ./images/pictures/tablet_product3_x2.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="
+                                ./images/pictures/mobile_product3_x1.jpg 1x,
+                                ./images/pictures/mobile_product3_x2.jpg 2x" media="(min-width: 767px)">
+                    <img src="./images/pictures/mobile_product3_x1.jpg" alt="ice-cream" class="products__img"
+                        type="jpg">
                 </picture>
-            </li>
-            <div class="products__list-milkshake">
-                <h3 class="products__title">milkshakes</h3>
-                <p class="products__descr">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits,
-                    berries and other sweets of your choice
-                </p>
-                <button class="products__btn--milkshake" type="button">
-                    <svg>
-                        <use href="./images/icons/pictogram.svg#icon-arrow"></use>
-                    </svg>
-                </button>
-            </div>
-        </ul>
+                <figcaption class="products__milkshake">
+                    <p class="products__title">milkshakes</p>
+                    <p class="products__descr">Sweet drinks based on milk and ice cream, supplemented with syrups,
+                        fruits, berries and other sweets of your choice
+                    </p>
+                    <button class="products__btn" type="button" ice-cream-open>
+                        <svg width="40px" height="16px">
+                            <use href="./images/icons/pictogram.svg#icon-arrow"></use>
+                        </svg>
+                    </button>
+                </figcaption>
+            </figure>
+        </div>
     </div>
     <div class="backdrop is-hidden" ice-cream>
         <div class="modal">
@@ -74,10 +90,10 @@
                     <use href="./images/icons/pictogram.svg#icon-close"></use>
                 </svg>
             </button>
-            <h2 class="modal__headline">
+            <p class="modal__headline">
                 Chololate
                 icecream
-            </h2>
+            </p>
             <picture><img class="modal__img" src="./images/pictures/mobile_ingrediens_x1.jpg" alt="ice cream Chololate">
             </picture>
             <div class="calorie">
@@ -121,4 +137,5 @@
             <button class="modal__button-send" type="submit">Submit</button>
         </div>
     </div>
+
 </section>
