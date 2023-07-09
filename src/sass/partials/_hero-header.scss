@@ -80,7 +80,10 @@
   .menu-container {
     background-color: #84a178;
     position: fixed;
+    z-index: 5;
+    // max-width: 480px;
     padding: 0 32px;
+
     padding-top: 12px;
     inset: 0;
     display: flex;
@@ -99,6 +102,9 @@
   }
   .mobile-menu {
     display: flex;
+
+    max-width: 257px;
+
     align-items: center;
     flex-direction: column;
     padding-bottom: 64px;
