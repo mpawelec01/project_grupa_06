@@ -11,7 +11,6 @@
     background-image: url(../images/pictures/mobile_background_x2.jpg);
   }
   @media screen and (min-width: 768px) {
-    @content;
     margin: 0;
     max-width: 768px;
     background-image: url(../images/pictures/tablet_background_x1.jpg);
