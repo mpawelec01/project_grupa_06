@@ -1,5 +1,15 @@
 .advantages {
   background-color: $background-color1;
+  padding-bottom: 81px;
+  margin: 0 auto;
+
+  @include tablet {
+    padding-bottom: 204px;
+  }
+
+  @include desktop {
+    padding-bottom: 178px;
+  }
 
   &__heading {
     opacity: 0;
@@ -10,6 +20,12 @@
     flex-direction: column;
     gap: 32px;
     align-items: center;
+
+    @include tablet {
+      flex-direction: row;
+      gap: 80px;
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -18,6 +34,13 @@
     align-items: center;
     max-width: 210px;
     gap: 16px;
+
+    @include tablet {
+      max-width: 152px;
+    }
+    @include desktop {
+      max-width: 360px;
+    }
   }
 
   &__icon-div {
@@ -37,6 +60,15 @@
     letter-spacing: 0.04em;
     text-align: center;
     color: $color-white;
+
+    @include tablet {
+      font-size: 48px;
+      line-height: 59px;
+    }
+    @include desktop {
+      font-size: 58px;
+      line-height: 71px;
+    }
   }
 
   &__text {
@@ -46,5 +78,15 @@
     letter-spacing: 0em;
     text-align: center;
     color: $color-white;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    @include desktop {
+      font-size: 16px;
+      line-height: 28px;
+    }
   }
 }
