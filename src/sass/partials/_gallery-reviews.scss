@@ -1,7 +1,6 @@
 .section-ice {
-  
   // max-width: calc(100vw - 30px);
-  margin-bottom: 100px;
+  padding-bottom: 150px;
   position: relative;
   background-image: url(../images/pictures/mobile_background_x1.jpg);
   background-size: cover;
@@ -11,6 +10,7 @@
   }
   @include tablet {
     margin: 0;
+    padding-bottom: 20px;
     background-image: url(../images/pictures/tablet_background_x1.jpg);
     background-size: cover;
     background-position: center;
