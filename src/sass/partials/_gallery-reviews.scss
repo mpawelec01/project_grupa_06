@@ -5,14 +5,13 @@
   position: relative;
   background-image: url(../images/pictures/mobile_background_x1.jpg);
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   @media (main-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/pictures/mobile_background_x2.jpg);
   }
   @include tablet {
     margin: 0;
-    max-width: 768px;
+
     background-image: url(../images/pictures/tablet_background_x1.jpg);
     background-size: cover;
     background-position: center;
@@ -23,7 +22,7 @@
   }
   @include desktop {
     margin: 0;
-    max-width: 1200px;
+
     background-image: url(../images/pictures/desktop_background_x1.jpg);
     background-size: cover;
     background-position: center;
