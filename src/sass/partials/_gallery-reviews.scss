@@ -30,6 +30,7 @@
     }
   }
   &__header {
+    z-index: 1;
     position: relative;
     top: -45px;
     border: none;
@@ -46,7 +47,6 @@
     @include desktop {
       width: 1013px;
       height: 422px;
-      left: 70px;
     }
   }
   &__gallery {
