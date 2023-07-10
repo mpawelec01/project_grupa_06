@@ -9,6 +9,13 @@ $text-color: #131313;
 $background-modal: rgba(248, 210, 78, 0.1);
 $border-modal: #84a178;
 $time-color: #ababab;
+$button-hover: #0a8817;
+$button-disabled: #ababab;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -26,13 +33,15 @@ ul {
 .container {
   max-width: 480px;
   width: 100%;
-}
+  padding: 0 20px;
 
-$background-color1: #84a178;
-$color-white: #fcfcfc;
-$color-yellow: #f8d24e;
-$adress: #d6936d;
-$text-color: #131313;
-$background-modal: rgba(248, 210, 78, 0.1);
-$border-modal: #84a178;
-$time-color: #ababab;
+  @include tablet {
+    max-width: 768px;
+    margin: 0 auto 0;
+  }
+  @include desktop {
+    max-width: 1200px;
+    margin: 0 auto 0;
+    padding: 0;
+  }
+}

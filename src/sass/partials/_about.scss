@@ -1,0 +1,53 @@
+.about {
+  background-color: $background-color1;
+  padding: 61px 50px 50px;
+
+  &_heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &_container {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  &_title-label {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $color-white;
+  }
+
+  &_title {
+    font-family: Seymour One;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: $color-white;
+  }
+  &_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &_text {
+    margin-top: 40px;
+    margin-bottom: 24px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: $color-white;
+  }
+
+  &_img {
+    width: 279px;
+  }
+}

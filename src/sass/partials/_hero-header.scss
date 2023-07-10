@@ -4,7 +4,6 @@
   color: #fcfcfc;
   background-color: #84a178;
   height: 502px;
-
   &__logo {
     fill: #f8d24e;
     max-width: 40px;
@@ -25,15 +24,37 @@
     justify-content: space-between;
     padding-bottom: 50px;
   }
+
   .hero {
-    // margin: 0;
-    // padding-bottom: 32px;
-    // display: flex;
     &__buttons {
+      display: flex;
       padding-top: 32px;
-      // &__2nd {
-      //   margin-left: 12px;
-      // }
+      gap: 12px;
+    }
+    &__heading {
+      margin: 0 0;
+
+      font-size: 24px;
+      font-family: Seymour One;
+      font-weight: 400;
+
+      color: #fcfcfc;
+    }
+    // &__dots {
+    //   // position: relative;
+    //   // // bottom: 5%;
+    //   // // right: 0;
+    //   // display: flex;
+    //   // justify-content: flex-end;
+    //   // align-items: flex-end;
+    // }
+    &__title {
+      margin: 0 0;
+      font-size: 30px;
+      font-family: Seymour One;
+      font-weight: 400;
+
+      color: #fcfcfc;
     }
 
     &__svg--firstpart {
@@ -52,11 +73,8 @@
     }
     &__ice-cream {
       position: absolute;
-      bottom: 0;
+      bottom: 25%;
       left: 25%;
-      background-color: transparen;
-      // background: url(../images/mobile.jpg),
-      //   lightgray -19.518px -5.038px / 117.606% 113.259% no-repeat;
 
       width: 177px;
       height: 217px;
@@ -69,6 +87,11 @@
   .menu-container {
     background-color: #84a178;
     position: fixed;
+    z-index: 5;
+    padding: 0 32px;
+    width: 100vw;
+    overflow: hidden;
+    padding-top: 12px;
     inset: 0;
     display: flex;
     flex-direction: column;
@@ -77,10 +100,39 @@
     transition: transform 250ms ease;
     &__close-btn {
       position: absolute;
-      top: 10px;
+      top: 15px;
       right: 15px;
       background-color: transparent;
       border: none;
+      fill: #fcfcfc;
+    }
+  }
+  .mobile-menu {
+    display: flex;
+
+    max-width: 257px;
+
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 64px;
+    &__link {
+      color: #fcfcfc;
+      text-align: center;
+      font-size: 32px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    &__list {
+      display: flex;
+      margin: 0 0;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 32px;
+      padding-bottom: 110px;
+      padding-top: 51px;
     }
   }
 }

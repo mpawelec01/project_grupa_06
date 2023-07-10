@@ -1,0 +1,192 @@
+.section-ice {
+  padding: 0 auto 350px auto;
+  // max-width: calc(100vw - 30px);
+  margin-bottom: 350px;
+  position: relative;
+  background-image: url(../images/pictures/mobile_background_x1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media (main-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/pictures/mobile_background_x2.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    max-width: 768px;
+    background-image: url(../images/pictures/tablet_background_x1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media (main-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/pictures/tablet_background_x2.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    max-width: 1200px;
+    background-image: url(../images/pictures/desktop_background_x1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media (main-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/pictures/desktop_background_x2.jpg);
+    }
+  }
+  &__header {
+    position: relative;
+    top: -45px;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: -16px;
+    display: flex;
+    align-items: center;
+    // width: 100vw;
+    height: 204px;
+    @media screen and (min-width: 768px) {
+      width: 704px;
+      height: 327px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 1013px;
+      height: 422px;
+      left: 70px;
+    }
+  }
+
+  &__gallery {
+    padding-bottom: 10px;
+  }
+}
+.section-reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  &__customer-container {
+    width: 85px;
+    border: none;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 10px;
+  }
+  &__feedback-container {
+    background-color: $background-color1;
+    width: 280px;
+    border-radius: 10px;
+    padding: 40px;
+    @media screen and (min-width: 768px) {
+      width: 705px;
+      height: 138px;
+      padding-top: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 968px;
+      height: 138px;
+    }
+  }
+  &__feedback-text {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30.6px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $color-white;
+    width: 202px;
+    @media screen and (min-width: 768px) {
+      width: 545px;
+      font-family: 'Montserrat';
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: 0.04em;
+      text-align: center;
+      padding: 0 0 10px 0;
+      margin-left: 35px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 750px;
+      font-family: 'Montserrat';
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 30px;
+      letter-spacing: 0.04em;
+      text-align: center;
+      padding: 0;
+      margin-left: 50px;
+    }
+  }
+  &__name-location {
+    margin-bottom: 120px;
+  }
+  &__header {
+    width: 189px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 37.2px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $text-color;
+  }
+  &__header-customer-two {
+    margin-top: 50px;
+  }
+}
+.navigation-review {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  &__button {
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    margin-bottom: 50px;
+  }
+  &__button-active {
+    background-color: $background-color1;
+  }
+}
+.hidden-nav {
+  display: none;
+}
+.swiper-pagination {
+  padding-bottom: 100px;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#slideset1 {
+  position: relative;
+}
+#slideset1 > * {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: 12s autoplay1 infinite;
+}
+@keyframes autoplay1 {
+  0% {
+    visibility: visible;
+  }
+  33.33% {
+    visibility: hidden;
+  }
+}
+#slideset1 > *:nth-child(1) {
+  animation-delay: 0s;
+}
+#slideset1 > *:nth-child(2) {
+  animation-delay: 4s;
+}
+#slideset1 > *:nth-child(3) {
+  animation-delay: 8s;
+}

@@ -1,0 +1,125 @@
+.contacts {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  background-color: $background-color1;
+  font-family: 'Montserrat', sans-serif;
+
+  &__schop {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 412px;
+    border-radius: 24px;
+    background-color: $color-white;
+    box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+    position: relative;
+    top: -362px;
+  }
+  &__schop--service {
+    background-color: $color-yellow;
+    border-radius: 4px;
+    height: 22px;
+    width: fit-content;
+    padding: 4px 22px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-left: 32px;
+
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.48px;
+  }
+
+  &__schop--address {
+    font-style: normal;
+    color: $text-color;
+    margin-left: 32px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 186%;
+    letter-spacing: 0.48px;
+
+    &--place {
+      margin-top: 24px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #e1e1e1;
+      width: 216px;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.street {
+  color: $adress;
+  line-height: 183%;
+}
+
+.datatime {
+  color: $time-color;
+}
+
+.buttons-location {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -362px;
+  margin-left: 50%;
+  margin-right: 50%;
+  &__our-locations {
+    background-color: $color-yellow;
+    width: 196px;
+    height: 42px;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 16px;
+
+    font-weight: 600;
+  }
+  &__franschise {
+    justify-content: center;
+    background-color: transparent;
+    width: 196px;
+    height: 42px;
+
+    border-radius: 10px;
+    border: 2px solid #f8d24e;
+
+    font-weight: 600;
+
+    &--svg {
+      vertical-align: middle;
+    }
+  }
+  &__our-locations:hover {
+    background-color: #0a8817;
+  }
+  &__franschise:hover {
+    border: 2px solid #0a8817;
+  }
+  &__our-locations:focus {
+    background-color: #0a8817;
+    color: white;
+  }
+  &__franschise:focus {
+    border: 2px solid #0a8817;
+    color: white;
+  }
+}
+.buttons-location__our-locations[disabled] {
+  background-color: #ababab;
+}
+.buttons-location__franchise[disabled] {
+  border: 2px solid #ababab;
+}
+.section-contacts {
+  opacity: 0;
+  font-size: 0px;
+}

@@ -4,10 +4,16 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+@import './partials/mixins';
+@import './partials/setup';
 
-@import '../sass/header';
-@import '../sass/setup';
+@import './partials/hero-header';
 @import './partials/button';
+@import './partials/file';
 @import './partials/product-modal';
 @import './partials/footer';
-
+@import './partials/about';
+@import './partials/contacts';
+@import './partials/advantages';
+@import './partials/gallery-reviews';
+@import './partials/typography';
