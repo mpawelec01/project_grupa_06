@@ -93,6 +93,10 @@
     border: 2px solid #f8d24e;
 
     font-weight: 600;
+
+    &--svg {
+      vertical-align: middle;
+    }
   }
   &__our-locations:hover {
     background-color: #0a8817;
