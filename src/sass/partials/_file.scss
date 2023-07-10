@@ -33,6 +33,14 @@
     position: absolute;
     top: 12px;
     right: 12px;
+    // color: $background-white-color;
+    // background-color: $background-white-color;
+    // border: none;
+    // cursor: pointer;
+  }
+
+  &__button-svg {
+    border: none;
   }
 
   &__header {
