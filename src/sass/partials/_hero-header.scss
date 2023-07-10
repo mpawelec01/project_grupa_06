@@ -40,7 +40,14 @@
 
       color: #fcfcfc;
     }
-
+    // &__dots {
+    //   // position: relative;
+    //   // // bottom: 5%;
+    //   // // right: 0;
+    //   // display: flex;
+    //   // justify-content: flex-end;
+    //   // align-items: flex-end;
+    // }
     &__title {
       margin: 0 0;
       font-size: 30px;
@@ -66,9 +73,9 @@
     }
     &__ice-cream {
       position: absolute;
-      bottom: 0;
+      bottom: 25%;
       left: 25%;
-      background-color: transparen;
+
       width: 177px;
       height: 217px;
     }
@@ -81,9 +88,9 @@
     background-color: #84a178;
     position: fixed;
     z-index: 5;
-    // max-width: 480px;
     padding: 0 32px;
-
+    width: 100vw;
+    overflow: hidden;
     padding-top: 12px;
     inset: 0;
     display: flex;
