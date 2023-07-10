@@ -34,6 +34,10 @@
     text-align: center;
     border: none;
     height: 42px;
+
+    &--svg {
+      vertical-align: middle;
+    }
   }
   &__buynow {
     border-radius: 10px;
