@@ -1,6 +1,7 @@
 .section-ice {
   // max-width: calc(100vw - 30px);
   padding-bottom: 150px;
+  margin: 0;
   position: relative;
   background-image: url(../images/pictures/mobile_background_x1.jpg);
   background-size: cover;
@@ -38,8 +39,9 @@
     overflow: hidden;
     display: flex;
     align-items: center;
-    // width: 100vw;
+    width: 440px;
     height: 204px;
+    // width: 100vw;
     @include tablet {
       width: 704px;
       height: 327px;
