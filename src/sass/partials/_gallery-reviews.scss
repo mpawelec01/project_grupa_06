@@ -1,7 +1,7 @@
 .section-ice {
-  padding: 0 auto 350px auto;
+  
   // max-width: calc(100vw - 30px);
-  margin-bottom: 350px;
+  margin-bottom: 100px;
   position: relative;
   background-image: url(../images/pictures/mobile_background_x1.jpg);
   background-size: cover;
@@ -11,7 +11,6 @@
   }
   @include tablet {
     margin: 0;
-
     background-image: url(../images/pictures/tablet_background_x1.jpg);
     background-size: cover;
     background-position: center;
@@ -22,7 +21,6 @@
   }
   @include desktop {
     margin: 0;
-
     background-image: url(../images/pictures/desktop_background_x1.jpg);
     background-size: cover;
     background-position: center;
@@ -51,7 +49,6 @@
       left: 70px;
     }
   }
-
   &__gallery {
     padding-bottom: 10px;
   }
@@ -154,14 +151,14 @@
   display: none;
 }
 .swiper-pagination {
-  padding-bottom: 400px;
+  padding-bottom: 250px;
 }
 img {
   display: block;
   max-width: 100%;
 }
 .swiper {
-  padding-bottom: 350px;
+  padding-bottom: 150px;
 }
 #slideset1 {
   position: relative;
