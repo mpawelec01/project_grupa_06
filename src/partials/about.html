@@ -4,14 +4,23 @@
       <span class="about__title-label">Tradition and love</span>
       <h2 class="about__title">How it's made?</h2>
     </div>
-    <!-- <div class="about__img">
-    <img 
-      src="./images/pictures/mobile_cow_x1.jpg"
-      alt="krowa na polanie"
-      srcset="./images/pictures/mobile_cow_x1.jpg 279w"
-      sizes="(min-width: 450px) 279px 100vw"
-    />
-    </div> -->
+    <figure class="about__img">
+      <picture>
+        <source
+          srcset="./images/pictures/desktop_cow_x1.jpg 1x, ./images/pictures/desktop_cow_x2.jpg 2x"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="./images/pictures/tablet_cow_x1.jpg 1x, ./images/pictures/tablet_cow_x2.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/pictures/mobile_cow_x1.jpg 1x, ./images/pictures/mobile_cow_x2.jpg 2x"
+          media="(min-width: 767px)"
+        />
+        <img src="./images/pictures/mobile_cow_x1.jpg" alt="krowa na polanie" type="jpg"/>
+      </picture>
+    </figure>
     <div class="about__content">
       <p class="about__text">
         Ice is a place where you will become not only a little happier, but also healthier. Health
