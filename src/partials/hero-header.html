@@ -1,19 +1,27 @@
 <header class="header">
   <div class="container">
     <div class="header__blocks">
-      <svg class="header__logo" width="40" height="37">
-        <use href="./images/icons.svg#icon-untitled"></use>
+      <svg class="header__logo">
+        <use class="header__svg" href="./images/icons.svg#icon-untitled"></use>
       </svg>
-      <button
-        type="button"
-        class="header__button js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg class="header__mobile-menu" width="32" height="32">
-          <use href="./images/icons.svg#icon-eva_menu-fill"></use>
-        </svg>
-      </button>
+      <div class="header__menu">
+        <button
+          type="button"
+          class="header__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header__mobile-menu" width="32" height="32">
+            <use href="./images/icons.svg#icon-eva_menu-fill"></use>
+          </svg>
+          <button type="button" class="buttons__buynow buttons__buynow--header mobile-menu__button">
+            Buy now
+            <svg class="buttons__buynow--svg" width="12" height="12">
+              <use href="./images/icons/pictogram.svg#icon-button_arrow"></use>
+            </svg>
+          </button>
+        </button>
+      </div>
     </div>
     <div class="hero">
       <h1 class="hero__heading">ICE CREAM MADE WITH</h1>
@@ -22,22 +30,55 @@
         <button type="button" class="buttons__products">Products</button>
         <button type="button" class="buttons__made buttons__made--2nd">How it’s made?</button>
       </div>
-      <!-- <div class="hero__dots">
-        <svg class="hero__svg hero__svg--firstpart">
-          <use href="./images/icons.svg#icon-kropki-2"></use>
-        </svg>
-        <div class="hero__ice-cream">
-          <img src="./images/pictures/mobile_icecream_x1.png" alt="ice-cream" width="177" />
+      <div class="presentation">
+        <img
+          class="presentation__photo"
+          alt="lots-ice-cream"
+          src="./images/pictures/tablet_lots_icecream_x1.png"
+          width="152"
+          height="152"
+        />
+        <div class="presentation__describe">
+          <p class="presentation__text">
+            Indulge in a scoop of ice cream made with passion and treat your taste buds to an
+            unforgettable experience!
+          </p>
+          <button class="presentation__btn" type="button">
+            <svg width="40px" height="16px">
+              <use href="./images/icons/pictogram.svg#icon-arrow"></use>
+            </svg>
+          </button>
         </div>
-        <svg class="hero__svg hero__svg--secondpart">
-          <use href="./images/icons.svg#icon-Group-124"></use>
-        </svg>
-      </div> -->
+      </div>
     </div>
   </div>
-  <!-- <div class="menu-container js-menu-container" id="mobile-menu">
-    <svg class="header__logo" width="40" height="37">
-      <use href="./images/icons.svg#icon-untitled"></use>
+  <div class="hero__graphics">
+    <svg class="hero__svg hero__svg--firstpart">
+      <use href="./images/icons.svg#icon-kropki-2"></use>
+    </svg>
+    <div class="hero__photo">
+      <img
+        class="hero__img"
+        src="./images/pictures/mobile_icecream_x1.png"
+        alt="ice-cream"
+        srcset="
+          ./images/pictures/mobile_icecream_x1.png  177w,
+          ./images/pictures/mobile_icecream_x2.png  354w,
+          ./images/pictures/tablet_icecream_x1.png  268w,
+          ./images/pictures/tablet_icecream_x2.png  536w,
+          ./images/pictures/desktop_icecream_x1.png 456w,
+          ./images/pictures/desktop_icecream_x2.png 912w
+        "
+        sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, 100vw"
+      />
+    </div>
+    <svg class="hero__svg hero__svg--secondpart">
+      <use href="./images/icons.svg#icon-Group-124"></use>
+    </svg>
+  </div>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <svg class="header__logo">
+      <use class="header__svg" href="./images/icons.svg#icon-untitled"></use>
     </svg>
     <button type="button" class="menu-container__close-btn js-close-menu">
       <svg width="32" height="32">
@@ -59,7 +100,12 @@
           <a href="#" class="mobile-menu__link">Contact</a>
         </li>
       </ul>
-      <button type="button" class="buttons__buynow mobile-menu__button">Buy now</button>
+      <button type="button" class="buttons__buynow buttons__buynow--visibility mobile-menu__button">
+        Buy now
+        <svg class="buttons__buynow--svg" width="12" height="12">
+          <use href="./images/icons/pictogram.svg#icon-button_arrow"></use>
+        </svg>
+      </button>
     </div>
-  </div> -->
+  </div>
 </header>
