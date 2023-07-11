@@ -23,22 +23,6 @@
     border: none;
     background-color: transparent;
   }
-  &__read-more {
-    width: 164px;
-    background-color: $color-yellow;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: center;
-    border: none;
-    height: 42px;
-
-    &--svg {
-      vertical-align: middle;
-    }
-  }
   &__buynow {
     border-radius: 10px;
     background: #f8d24e;
