@@ -92,10 +92,20 @@
 }
 
 @include tablet {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
   .copyright {
     flex-wrap: nowrap;
     &__wrapper {
-      width: 320px;
+      width: 760px;
     }
   }
 }
