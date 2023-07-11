@@ -1,5 +1,5 @@
 :root {
-  --swiper-theme-color: $background-color1;
+  --swiper-theme-color: rgba(132, 161, 120, 1);
 }
 .section-ice {
   // max-width: calc(100vw - 30px);
@@ -192,4 +192,9 @@ img {
 }
 #slideset1 > *:nth-child(3) {
   animation-delay: 8s;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border: none;
 }
