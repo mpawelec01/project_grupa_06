@@ -50,7 +50,22 @@
     line-height: normal;
     padding: 12px 0;
     padding-left: 36px;
-    padding-right: 51px;
+    padding-right: 35px;
     border: none;
+    &--svg {
+      vertical-align: middle;
+    }
+    &--visibility {
+      @include tablet {
+        display: none;
+      }
+    }
+    &--header {
+      display: none;
+      @include tablet {
+        display: inline;
+        margin-left: 32px;
+      }
+    }
   }
 }

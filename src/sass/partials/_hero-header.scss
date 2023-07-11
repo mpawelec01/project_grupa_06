@@ -1,18 +1,43 @@
 .header {
-  padding-top: 17px;
+  padding-top: 12px;
+  @media screen and (min-width: 480px) {
+    padding-top: 14px;
+  }
+  @include tablet {
+    padding-top: 20px;
+  }
   font-family: 'Seymour One', sans-serif;
   color: #fcfcfc;
   background-color: #84a178;
-  height: 502px;
+  // height: 502px;
   &__logo {
     fill: #f8d24e;
     max-width: 40px;
     max-height: 37px;
+    @media screen and (min-width: 480px) {
+      max-width: 48px;
+      max-height: 44px;
+    }
+    @include desktop {
+      max-width: 60px;
+      max-height: 65px;
+    }
+  }
+  &__svg {
+    @media screen and (min-width: 480px) {
+      max-width: 48px;
+      max-height: 44px;
+    }
+    @include desktop {
+      max-width: 60px;
+      max-height: 65px;
+    }
   }
   &__mobile-menu {
     max-width: 32px;
     max-height: 32px;
     fill: white;
+    vertical-align: middle;
   }
   &__button {
     background-color: transparent;
@@ -22,32 +47,43 @@
   &__blocks {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
+    @include tablet {
+      padding-bottom: 14px;
+    }
   }
 
   .hero {
+    z-index: 3;
+    // height: 100vw;
     &__buttons {
       display: flex;
       padding-top: 32px;
+      @include tablet {
+        padding-top: 28px;
+      }
       gap: 12px;
     }
     &__heading {
       margin: 0 0;
-
+      max-width: 247px;
       font-size: 24px;
       font-family: Seymour One;
       font-weight: 400;
 
       color: #fcfcfc;
     }
-    // &__dots {
-    //   // position: relative;
-    //   // // bottom: 5%;
-    //   // // right: 0;
-    //   // display: flex;
-    //   // justify-content: flex-end;
-    //   // align-items: flex-end;
-    // }
+    &__graphics {
+      position: relative;
+      height: 236px;
+      @media screen and (min-width: 480px) {
+        height: 150px;
+      }
+      padding: 0 0;
+      @include tablet {
+        height: 12px;
+      }
+    }
     &__title {
       margin: 0 0;
       font-size: 30px;
@@ -60,7 +96,7 @@
     &__svg--firstpart {
       position: absolute;
       bottom: 0;
-      left: 0;
+      left: calc(100vw - 318px);
       max-width: 107px;
       max-height: 34px;
     }
@@ -71,13 +107,40 @@
       max-width: 126px;
       max-height: 49px;
     }
-    &__ice-cream {
+    &__photo {
       position: absolute;
-      bottom: 25%;
-      left: 25%;
+      z-index: 2;
+      bottom: 0;
+      left: calc(100vw - 234px);
 
       width: 177px;
       height: 217px;
+      @media screen and (min-width: 480px) {
+        width: 218px;
+        height: 267px;
+      }
+      @include tablet {
+        width: 268px;
+        height: 329px;
+      }
+      @include desktop {
+        width: 456px;
+        height: 560px;
+      }
+    }
+    &__img {
+      @media screen and (min-width: 480px) {
+        width: 218px;
+        height: 267px;
+      }
+      @include tablet {
+        width: 268px;
+        height: 329px;
+      }
+      @include desktop {
+        width: 456px;
+        height: 560px;
+      }
     }
   }
   .menu-container.is-open {
@@ -90,12 +153,12 @@
     z-index: 5;
     padding: 0 32px;
     width: 100vw;
+    // height: 568px;
     overflow: hidden;
     padding-top: 12px;
     inset: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     transform: translateX(100%);
     transition: transform 250ms ease;
     &__close-btn {
@@ -106,33 +169,73 @@
       border: none;
       fill: #fcfcfc;
     }
+    &__logo {
+      fill: #f8d24e;
+      width: 40px;
+      height: 37px;
+    }
   }
   .mobile-menu {
     display: flex;
-
-    max-width: 257px;
-
-    align-items: center;
+    max-width: 100vw;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding-bottom: 64px;
+    padding-top: 51px;
     &__link {
       color: #fcfcfc;
       text-align: center;
       font-size: 32px;
+      @include tablet {
+        font-size: 48px;
+      }
       font-family: Montserrat;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
     }
+    &__link:hover,
+    &__link:focus {
+      color: #000;
+    }
     &__list {
       display: flex;
-      margin: 0 0;
+      // margin: 0 0;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       gap: 32px;
       padding-bottom: 110px;
-      padding-top: 51px;
+      // padding-top: 51px;
     }
+  }
+}
+.presentation {
+  display: none;
+  @include tablet {
+    display: flex;
+    padding-top: 12px;
+  }
+  // &__photo {
+  // }
+  &__describe {
+    padding-top: 27px;
+    padding-left: 32px;
+  }
+  &__text {
+    color: #fff;
+    font-size: 12px;
+    max-width: 165px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  &__btn {
+    background-color: transparent;
+    fill: #fcfcfc;
+    border: none;
+    padding-top: 29px;
   }
 }
