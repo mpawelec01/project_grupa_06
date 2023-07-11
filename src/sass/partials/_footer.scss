@@ -2,6 +2,9 @@
   background: $background-color1;
   padding-inline: 20px;
   font-family: Montserrat, sans-serif;
+  &__headwrap {
+    width: 232px;
+  }
   &__heading {
     color: $color-white;
     font-size: 18px;
@@ -98,11 +101,25 @@
   .footer {
     display: flex;
     flex-direction: column;
+    &__heading {
+      font-size: 26px;
+    }
+    &__slogan {
+      font-size: 48px;
+    }
     &__content {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: flex-end;
     }
+    &__headwrap {
+      width: 352px;
+    }
+  }
+
+  .footer-contact {
+    font-size: 14px;
   }
 
   .copyright {
@@ -110,5 +127,23 @@
     &__wrapper {
       width: 760px;
     }
+  }
+}
+
+@include desktop {
+  .footer {
+    &__heading {
+      font-size: 30px;
+    }
+    &__slogan {
+      font-size: 58px;
+    }
+    &__headwrap {
+      width: 504px;
+    }
+  }
+
+  .footer-contact {
+    font-size: 16px;
   }
 }
