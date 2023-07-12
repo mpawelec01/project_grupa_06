@@ -3,6 +3,9 @@
     border-radius: 8px;
     border: 2px solid #f8d24e;
     padding: 11px 26px;
+    @include desktop {
+      padding: 12px 34px;
+    }
     background-color: transparent;
     color: #000;
     text-align: center;
@@ -15,7 +18,10 @@
     color: #f8d24e;
     text-align: center;
     font-size: 12px;
-
+    @include desktop {
+      font-size: 14px;
+      padding: 12px 21px 11px 22px;
+    }
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     line-height: normal;
@@ -54,6 +60,7 @@
     border: none;
     &--svg {
       vertical-align: middle;
+      fill: currentColor;
     }
     &--visibility {
       @include tablet {
@@ -67,5 +74,12 @@
         margin-left: 32px;
       }
     }
+  }
+  &__buynow:hover,
+  &__buynow:focus {
+    background-color: #0a8817;
+  }
+  &__buynow:focus {
+    color: #fcfcfc;
   }
 }

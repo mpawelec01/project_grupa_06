@@ -4,6 +4,22 @@
       <svg class="header__logo">
         <use class="header__svg" href="./images/icons.svg#icon-untitled"></use>
       </svg>
+      <div class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">How it's made?</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Our products</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Contact</a>
+          </li>
+        </ul>
+      </div>
       <div class="header__menu">
         <button
           type="button"
@@ -23,31 +39,48 @@
         </button>
       </div>
     </div>
-    <div class="hero">
-      <h1 class="hero__heading">ICE CREAM MADE WITH</h1>
-      <p class="hero__title">PASSION</p>
-      <div class="hero__buttons buttons">
-        <button type="button" class="buttons__products">Products</button>
-        <button type="button" class="buttons__made buttons__made--2nd">How it’s made?</button>
+    <div class="header__content">
+      <div class="hero">
+        <h1 class="hero__heading">ICE CREAM MADE WITH</h1>
+        <p class="hero__title">PASSION</p>
+        <div class="hero__buttons buttons">
+          <button type="button" class="buttons__products">Products</button>
+          <button type="button" class="buttons__made buttons__made--2nd">How it’s made?</button>
+        </div>
+        <div class="presentation">
+          <img
+            class="presentation__photo"
+            alt="lots-ice-cream"
+            src="./images/pictures/tablet_lots_icecream_x1.png"
+            srcset="
+              ./images/pictures/tablet_lots_icecream_x1.png  152w,
+              ./images/pictures/tablet_lots_icecream_x2.png  304w,
+              ./images/pictures/desktop_lots_icecream_x1.png 225w,
+              ./images/pictures/desktop_lots_icecream_x2.png 450w
+            "
+            sizes="(min-width:  1200px) 225px, (min-width: 768px) 152px, 100vw"
+          />
+          <div class="presentation__describe">
+            <p class="presentation__text">
+              Indulge in a scoop of ice cream made with passion and treat your taste buds to an
+              unforgettable experience!
+            </p>
+            <button class="presentation__btn" type="button">
+              <svg width="40px" height="16px">
+                <use href="./images/icons/pictogram.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="presentation">
-        <img
-          class="presentation__photo"
-          alt="lots-ice-cream"
-          src="./images/pictures/tablet_lots_icecream_x1.png"
-          width="152"
-          height="152"
-        />
-        <div class="presentation__describe">
-          <p class="presentation__text">
-            Indulge in a scoop of ice cream made with passion and treat your taste buds to an
-            unforgettable experience!
-          </p>
-          <button class="presentation__btn" type="button">
-            <svg width="40px" height="16px">
-              <use href="./images/icons/pictogram.svg#icon-arrow"></use>
-            </svg>
-          </button>
+      <div class="numbers">
+        <div class="numbers__cafes">
+          <span class="numbers__front">16</span>
+          <span class="numbers__text">cafes</span>
+        </div>
+        <div class="numbers__foodtrucks">
+          <span class="numbers__front">23</span>
+          <span class="numbers__text">food trucks</span>
         </div>
       </div>
     </div>
@@ -55,6 +88,9 @@
   <div class="hero__graphics">
     <svg class="hero__svg hero__svg--firstpart">
       <use href="./images/icons.svg#icon-kropki-2"></use>
+    </svg>
+    <svg class="hero__svg hero__svg--tablet">
+      <use href="./images/icons.svg#icon-Group-127"></use>
     </svg>
     <div class="hero__photo">
       <img
@@ -75,6 +111,7 @@
     <svg class="hero__svg hero__svg--secondpart">
       <use href="./images/icons.svg#icon-Group-124"></use>
     </svg>
+    <img src="./images/Kropki.png" alt="dotted-background" class="hero__dots" />
   </div>
   <div class="menu-container js-menu-container" id="mobile-menu">
     <svg class="header__logo">
