@@ -114,6 +114,13 @@
     display: block;
     position: relative;
     border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+    @include desktop {
+      width: 302px;
+      height: 302px;
+    }
   }
 
   &__ice {
