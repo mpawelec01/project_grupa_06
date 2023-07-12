@@ -29,6 +29,25 @@
     letter-spacing: 0.04em;
     text-align: center;
     color: $color-white;
+<<<<<<< Updated upstream
+=======
+    padding-inline: 140px;
+    padding-bottom: 32px;
+    text-transform: uppercase;
+    justify-content: center;
+    display: flex;
+
+    @include tablet {
+      font-size: 34px;
+      padding-bottom: 72px;
+      padding-inline: 0;
+    }
+
+    @include desktop {
+      font-size: 36px;
+      padding-bottom: 82px;
+    }
+>>>>>>> Stashed changes
   }
   &__content {
     display: flex;
@@ -53,6 +72,108 @@
 
   &__img::before {
     border-radius: 50%;
+<<<<<<< Updated upstream
+=======
+    z-index: 2;
+    display: block;
+    position: relative;
+  }
+
+  &__description {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 176%;
+    letter-spacing: 0.48px;
+    text-align: center;
+    color: $color-white;
+    max-width: 220px;
+    font-family: Montserrat;
+    padding-top: 40px;
+    position: relative;
+    bottom: -70px;
+    @include tablet {
+      text-align: left;
+      bottom: 0;
+    }
+
+    &-two {
+      margin-block: 8px;
+      @include desktop {
+        font-size: 14px;
+      }
+    }
+
+    &-three {
+      margin-bottom: 32px;
+      @include desktop {
+        margin-bottom: 0;
+        font-size: 14px;
+      }
+    }
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      margin-left: 38px;
+      max-width: 334px;
+      padding-top: 0;
+    }
+
+    @include desktop {
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 109px;
+      max-width: 463px;
+      padding-top: 0;
+    }
+  }
+
+  &__button {
+    padding-bottom: 60px;
+    @include tablet {
+     top: -52px;
+    }
+
+    @include desktop {
+      margin-right: 420px;
+      padding-block: 54px 52px;
+    }
+
+    &--read_more {
+      width: 164px;
+      background-color: $color-yellow;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: center;
+      border: none;
+      height: 42px;
+
+      &:hover {
+        background-color: $button-hover;
+      }
+
+      &:focus {
+        color: $color-white;
+      }
+
+      &--svg {
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.about__picture-overlay {
+  position: relative;
+  z-index: 1;
+  border-radius: 50%;
+
+  &::before {
+>>>>>>> Stashed changes
     content: '';
     color: #F8D24E;
   }
