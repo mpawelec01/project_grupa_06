@@ -1,6 +1,12 @@
 .contacts {
   width: 100%;
   margin-bottom: -345px;
+  @include tablet {
+    margin-bottom: -170px;
+  }
+  @include desktop {
+    margin-bottom: 0;
+  }
   background-color: $background-color1;
   font-family: 'Montserrat', sans-serif;
   .our-stores {
@@ -132,6 +138,12 @@
   gap: 16px;
   top: -342px;
   padding-bottom: 60px;
+  @include tablet {
+    padding-bottom: 40px;
+  }
+  @include desktop {
+    padding-bottom: 0;
+  }
 
   @include tablet {
     display: flex;
