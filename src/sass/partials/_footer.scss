@@ -126,6 +126,7 @@
 
   .copyright {
     flex-wrap: nowrap;
+    padding-block: 12px;
     &__wrapper {
       width: 760px;
     }
@@ -150,5 +151,8 @@
   .footer-contact {
     font-size: 16px;
     padding-block: 40px 60px;
+  }
+  .copyright {
+    padding-block: 12px;
   }
 }
