@@ -88,9 +88,57 @@
     color: $color-white;
     max-width: 220px;
     font-family: Montserrat;
+<<<<<<< Updated upstream
     padding-top: 40px;
     position: relative;
     bottom: -70px;
+=======
+       position: relative;
+    bottom: -40px;
+
+    &-two {
+      margin-block: 8px;
+      @include desktop {
+        font-size: 14px;
+      }
+    }
+
+    &-three {
+      margin-bottom: 32px;
+      @include desktop {
+        font-size: 14px;
+      }
+    }
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      margin-left: 38px;
+      max-width: 334px;
+      padding-top: 0;
+    }
+
+    @include desktop {
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 109px;
+      max-width: 463px;
+      padding-top: 0;
+    }
+  }
+  &__description {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 176%;
+    letter-spacing: 0.48px;
+    text-align: center;
+    color: $color-white;
+    max-width: 220px;
+    font-family: Montserrat;
+    position: relative;
+    bottom: -40px;
+>>>>>>> Stashed changes
     @include tablet {
       text-align: left;
       bottom: 0;
