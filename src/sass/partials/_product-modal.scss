@@ -285,19 +285,23 @@
 .modal {
   visibility: visible;
   z-index: 3;
-  background-color: $background-white-color;
+  background-color: #fff;
   border: 2px solid #f8d24e;
   border-radius: 20px;
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   position: fixed;
-  inset: 0 0 0% 16%;
+  inset: 0;
   overflow: auto;
-  width: 100%;
-  max-width: 280px;
+
+  @include tablet {
+    margin: 0 auto;
+    max-width: 568px;
+  }
 
   @include desktop {
     max-width: 568px;
-    inset: 0 0 0% 38%;
+    height: 996px;
   }
 
   &__button {
@@ -443,7 +447,11 @@
     box-shadow: 0px 5.2602739334106445px 19.72602653503418px 0px rgba(10, 136, 23, 0.25);
     width: 132px;
     height: 132px;
-    margin: 20px 74px auto 74px;
+    margin: 0 auto;
+
+    @include tablet {
+      margin: 24px 218px auto 218px;
+    }
 
     @include desktop {
       margin: 24px 218px auto 218px;
