@@ -5,10 +5,12 @@
   margin: 0 auto;
 
   @include tablet {
+    padding-top: 27px;
     padding-bottom: 204px;
   }
 
   @include desktop {
+   padding-top: 67px; 
     padding-bottom: 178px;
   }
 
