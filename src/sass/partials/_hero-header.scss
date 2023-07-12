@@ -1,4 +1,8 @@
 .header {
+  @include desktop {
+    width: 100%;
+    height: 664px;
+  }
   padding-top: 12px;
   @media screen and (min-width: 480px) {
     padding-top: 14px;
@@ -38,6 +42,9 @@
     max-height: 32px;
     fill: white;
     vertical-align: middle;
+    @include desktop {
+      display: none;
+    }
   }
   &__button {
     background-color: transparent;
@@ -47,18 +54,57 @@
   &__blocks {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 40px;
     @include tablet {
       padding-bottom: 14px;
+    }
+    @include desktop {
+      padding-bottom: 45px;
+    }
+  }
+  .navigation {
+    display: none;
+    @include desktop {
+      display: inline;
+    }
+    padding-left: 118px;
+    &__list {
+      display: flex;
+      gap: 28px;
+      flex-direction: row;
+    }
+    &__link {
+      color: #fcfcfc;
+      font-size: 16px;
+      font-family: Montserrat;
+      font-weight: 700;
+      line-height: normal;
+    }
+    &__link:hover,
+    &__link:focus {
+      color: #f8d24e;
     }
   }
 
   .hero {
     z-index: 3;
+
+    // max-width: 247px;
     // height: 100vw;
+    // margin-right: 40px;
+    margin: 0 auto;
+    @media screen and (min-width: 480px) {
+      margin: 0 0;
+    }
+    @include tablet {
+      margin: 0 0;
+    }
+
     &__buttons {
       display: flex;
       padding-top: 32px;
+
       @include tablet {
         padding-top: 28px;
       }
@@ -70,18 +116,28 @@
       font-size: 24px;
       font-family: Seymour One;
       font-weight: 400;
-
+      @include desktop {
+        font-size: 38px;
+        max-width: 367px;
+      }
       color: #fcfcfc;
     }
     &__graphics {
       position: relative;
       height: 236px;
+      // width: 100vw;
+      margin: 0 auto;
+      max-width: 320px;
       @media screen and (min-width: 480px) {
         height: 150px;
       }
       padding: 0 0;
       @include tablet {
         height: 12px;
+        max-width: 768px;
+      }
+      @include desktop {
+        height: 242px;
       }
     }
     &__title {
@@ -89,16 +145,59 @@
       font-size: 30px;
       font-family: Seymour One;
       font-weight: 400;
-
+      @include desktop {
+        font-size: 38px;
+      }
       color: #fcfcfc;
     }
 
     &__svg--firstpart {
       position: absolute;
       bottom: 0;
-      left: calc(100vw - 318px);
+      left: 0;
       max-width: 107px;
       max-height: 34px;
+      @media screen and (min-width: 480px) {
+        left: 25%;
+      }
+      @include tablet {
+        display: none;
+      }
+    }
+    &__svg--tablet {
+      visibility: hidden;
+      @include tablet {
+        visibility: visible;
+      }
+      @include desktop {
+        visibility: hidden;
+      }
+      position: absolute;
+      z-index: 0;
+      bottom: 5;
+      left: 0;
+      max-width: 110px;
+      max-height: 34px;
+    }
+    &__dots {
+      visibility: hidden;
+      @include tablet {
+        visibility: hidden;
+      }
+      @include desktop {
+        visibility: visible;
+        position: absolute;
+        bottom: 73%;
+        right: -216px;
+        max-width: 1200px;
+      }
+
+      position: absolute;
+      // z-index: 1;
+      // bottom: 0;
+      // left: 0;
+      // width: 100vw;
+      // height: 383px;
     }
     &__svg--secondpart {
       position: absolute;
@@ -106,26 +205,41 @@
       right: 0;
       max-width: 126px;
       max-height: 49px;
+      @media screen and (min-width: 480px) {
+        left: 90%;
+      }
+      @include tablet {
+        max-width: 182px;
+        max-height: 68px;
+        left: 77%;
+      }
+      @include desktop {
+        visibility: hidden;
+      }
     }
     &__photo {
       position: absolute;
-      z-index: 2;
+      z-index: 1;
       bottom: 0;
-      left: calc(100vw - 234px);
+      right: 18%;
 
       width: 177px;
       height: 217px;
       @media screen and (min-width: 480px) {
         width: 218px;
         height: 267px;
+        left: 50%;
       }
       @include tablet {
         width: 268px;
         height: 329px;
+        left: 55%;
       }
       @include desktop {
+        bottom: 73%;
         width: 456px;
         height: 560px;
+        left: 55%;
       }
     }
     &__img {
@@ -210,6 +324,56 @@
       // padding-top: 51px;
     }
   }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .numbers {
+    display: none;
+    @include tablet {
+      display: block;
+    }
+    padding-top: 14px;
+    @include desktop {
+      padding-top: 0;
+    }
+    &__cafes {
+      display: flex;
+      flex-direction: column;
+    }
+    &__foodtrucks {
+      display: flex;
+      padding-top: 20px;
+      flex-direction: column;
+    }
+    &__front {
+      color: #131313;
+      text-align: right;
+      font-size: 28px;
+      @include desktop {
+        font-size: 46px;
+      }
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      letter-spacing: 1.12px;
+      text-transform: uppercase;
+    }
+    &__text {
+      padding-top: 4px;
+      color: #fcfcfc;
+      text-align: right;
+      font-size: 8px;
+      @include desktop {
+        font-size: 14px;
+      }
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
 }
 .presentation {
   display: none;
@@ -217,11 +381,20 @@
     display: flex;
     padding-top: 12px;
   }
-  // &__photo {
-  // }
+  @include desktop {
+    display: flex;
+    align-items: center;
+    padding-top: 42px;
+  }
+  &__photo {
+    z-index: 1;
+  }
   &__describe {
     padding-top: 27px;
     padding-left: 32px;
+    @include desktop {
+      padding-left: 16px;
+    }
   }
   &__text {
     color: #fff;
@@ -231,6 +404,15 @@
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
+    @include desktop {
+      color: #fff;
+      font-size: 14px;
+      max-width: 200px;
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+    }
   }
   &__btn {
     background-color: transparent;
