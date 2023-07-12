@@ -35,6 +35,8 @@
     padding-inline: 140px;
     padding-bottom: 32px;
     text-transform: uppercase;
+    justify-content: center;
+    display: flex;
 
     @include tablet {
       font-size: 34px;
