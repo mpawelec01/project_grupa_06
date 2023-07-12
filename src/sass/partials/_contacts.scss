@@ -18,7 +18,7 @@
     }
   }
 
-  &__schop {
+  &__shop {
     display: flex;
     flex-direction: column;
     width: 280px;
@@ -39,7 +39,7 @@
       top: -192px;
     }
   }
-  &__schop--service {
+  &__shop--service {
     background-color: $color-yellow;
     border-radius: 4px;
     height: 22px;
@@ -66,7 +66,7 @@
     }
   }
 
-  &__schop--address {
+  &__shop--address {
     font-style: normal;
     color: $text-color;
     margin-left: 32px;
