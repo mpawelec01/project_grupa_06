@@ -13,7 +13,7 @@
             ./images/pictures/desktop_slider1_x1.jpg 1013w,
             ./images/pictures/desktop_slider1_x2.jpg 2016w
           "
-          sizes="(min-width: 768) 704px, (min-width: 1200px) 1013px"
+          sizes="(min-width: 1200px) 1013px, (min-width: 768) 704px, 100vw"
           class="section-ice__gallery"
         />
       </div>
@@ -29,7 +29,7 @@
             ./images/pictures/mobile_slider2_x1.jpg 1013w,
             ./images/pictures/mobile_slider2_x2.jpg 2016w
           "
-          sizes="(min-width: 768) 704px, (min-width: 1200px) 1013px"
+          sizes="(min-width: 1200px) 1013px, (min-width: 768) 704px, 100vw"
           class="section-ice__gallery"
         />
       </div>
@@ -45,7 +45,7 @@
             ./images/pictures/desktop_slider3_x1.jpg 1013w,
             ./images/pictures/desktop_slider3_x2.jpg 2016w
           "
-          sizes="(min-width: 768) 704px, (min-width: 1200px) 1013px"
+          sizes="(min-width: 1200px) 1013px, (min-width: 768) 704px, 100vw"
           class="section-ice__gallery"
         />
       </div>
@@ -63,7 +63,7 @@
                     ./images/pictures/mobile_Emily_x1.jpg  85w,
                     ./images/pictures/mobile_Emily_x2.jpg 170w
                   "
-                  sizes="(min-width: 768) 84px, (min-width: 1200px) 85vw"
+                  sizes="(min-width: 1200px) 85vw, (min-width: 768) 84px, 100vw"
                 />
               </div>
             </li>
@@ -96,7 +96,7 @@
                     ./images/pictures/mobile_Bryan_x1.jpg  85w,
                     ./images/pictures/mobile_Bryan_x2.jpg 170w
                   "
-                  sizes="(min-width: 768) 84px, (min-width: 1200px) 85vw"
+                  sizes="(min-width: 1200px) 85vw, (min-width: 768) 84px, 100vw"
                 />
               </div>
             </li>
@@ -130,7 +130,7 @@
                     ./images/pictures/mobile_Diana_x1.jpg  85w,
                     ./images/pictures/mobile_Diana_x2.jpg 170w
                   "
-                  sizes="(min-width: 768) 84px, (min-width: 1200px) 85vw"
+                  sizes="(min-width: 1200px) 85vw, (min-width: 768) 84px, 100vw"
                 />
               </div>
             </li>
@@ -152,16 +152,15 @@
           </ul>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
-    </div>
-    <div class="hidden-nav">
-      <div class="navigation-review">
-        <button
-          type="button"
-          class="navigation-review__button navigation-review__button-active"
-        ></button>
-        <button type="button" class="navigation-review__button"></button>
-        <button type="button" class="navigation-review__button"></button>
+      <div
+        class="swiper-pagination navigation-review swiper-pagination-bullets swiper-pagination-horizontal"
+      >
+        <span
+          class="swiper-pagination-bullet swiper-pagination-bullet-active"
+          aria-current="true"
+        ></span>
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span>
       </div>
     </div>
   </div>

@@ -1,7 +1,10 @@
 .footer {
   background: $background-color1;
-  padding-inline: 22px;
+
   font-family: Montserrat, sans-serif;
+  &__headwrap {
+    width: 232px;
+  }
   &__heading {
     color: $color-white;
     font-size: 18px;
@@ -51,6 +54,9 @@
   justify-content: center;
   border-top: 1px solid #e1e1e1;
   padding-block: 20px;
+  padding-inline: 0;
+  width: 100%;
+
   color: $time-color;
   &__wrapper {
     width: 200px;
@@ -95,17 +101,58 @@
   .footer {
     display: flex;
     flex-direction: column;
+    &__heading {
+      font-size: 26px;
+    }
+    &__slogan {
+      font-size: 48px;
+      padding-block: 8px 32px;
+    }
     &__content {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: flex-end;
     }
+    &__headwrap {
+      width: 352px;
+    }
+  }
+
+  .footer-contact {
+    font-size: 14px;
+    padding-block: 34px 60px;
   }
 
   .copyright {
     flex-wrap: nowrap;
+    padding-block: 12px;
     &__wrapper {
       width: 760px;
     }
+  }
+}
+
+@include desktop {
+  .footer {
+    &__heading {
+      font-size: 30px;
+      font-weight: 400;
+    }
+    &__slogan {
+      font-size: 58px;
+      padding-block: 14px 60px;
+    }
+    &__headwrap {
+      width: 504px;
+    }
+  }
+
+  .footer-contact {
+    font-size: 16px;
+    padding-block: 40px 60px;
+  }
+  .copyright {
+    padding-block: 12px;
   }
 }
