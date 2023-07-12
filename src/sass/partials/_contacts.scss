@@ -1,5 +1,12 @@
 .contacts {
   width: 100%;
+  margin-bottom: -345px;
+  @include tablet {
+    margin-bottom: -170px;
+  }
+  @include desktop {
+    margin-bottom: 0;
+  }
   background-color: $background-color1;
   font-family: 'Montserrat', sans-serif;
   .our-stores {
@@ -18,7 +25,7 @@
     }
   }
 
-  &__schop {
+  &__shop {
     display: flex;
     flex-direction: column;
     width: 280px;
@@ -39,7 +46,7 @@
       top: -192px;
     }
   }
-  &__schop--service {
+  &__shop--service {
     background-color: $color-yellow;
     border-radius: 4px;
     height: 22px;
@@ -66,7 +73,7 @@
     }
   }
 
-  &__schop--address {
+  &__shop--address {
     font-style: normal;
     color: $text-color;
     margin-left: 32px;
@@ -130,12 +137,19 @@
   position: relative;
   gap: 16px;
   top: -342px;
+  padding-bottom: 60px;
 
   @include tablet {
     display: flex;
     flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 40px;
     justify-content: center;
     top: -172px;
+  }
+  @include desktop {
+    padding-bottom: 0;
+    padding-top: 60px;
   }
   &__our-locations {
     background-color: $color-yellow;
@@ -160,6 +174,7 @@
 
     &--svg {
       vertical-align: middle;
+      fill: currentColor;
     }
   }
   &__our-locations:hover {
