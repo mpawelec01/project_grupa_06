@@ -14,6 +14,13 @@
     font-weight: 600;
     line-height: normal;
   }
+  &__products:hover,
+  &__products:focus {
+    border-color: #0a8817;
+  }
+  &__products:focus {
+    color: #fcfcfc;
+  }
   &__made {
     color: #f8d24e;
     text-align: center;
@@ -28,6 +35,12 @@
     text-decoration-line: underline;
     border: none;
     background-color: transparent;
+  }
+  &__made:hover {
+    color: #0a8817;
+  }
+  &__made:focus {
+    color: #fcfcfc;
   }
   &__buynow {
     border-radius: 10px;
