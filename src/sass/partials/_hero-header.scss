@@ -187,17 +187,12 @@
       @include desktop {
         visibility: visible;
         position: absolute;
-        bottom: 73%;
+        bottom: 75%;
         right: -216px;
         max-width: 1200px;
       }
 
       position: absolute;
-      // z-index: 1;
-      // bottom: 0;
-      // left: 0;
-      // width: 100vw;
-      // height: 383px;
     }
     &__svg--secondpart {
       position: absolute;
@@ -236,7 +231,7 @@
         left: 55%;
       }
       @include desktop {
-        bottom: 73%;
+        bottom: 74.5%;
         width: 456px;
         height: 560px;
         left: 55%;
