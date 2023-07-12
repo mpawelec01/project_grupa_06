@@ -48,10 +48,12 @@
     @include tablet {
       width: 704px;
       height: 327px;
+      top: -144px;
     }
     @include desktop {
       width: 1013px;
       height: 422px;
+      top: -98px;
     }
   }
   &__gallery {

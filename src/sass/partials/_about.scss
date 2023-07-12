@@ -87,8 +87,7 @@
     font-family: Montserrat;
     padding-top: 40px;
     position: relative;
-    bottom: -70px;
-
+    bottom: -40px;
     &-two {
       margin-block: 8px;
       @include desktop {
@@ -129,6 +128,9 @@
     color: $color-white;
     max-width: 220px;
     font-family: Montserrat;
+    position: relative;
+    bottom: -40px;
+
     padding-top: 40px;
     position: relative;
     bottom: -70px;
